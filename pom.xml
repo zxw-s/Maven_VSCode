@@ -51,11 +51,18 @@
                     <configuration>
                         <!-- 这里改成你自己的完整包名.类名 -->
                         <mainClass>com.example.App</mainClass>
+                        <!-- 给运行的Java程序设置系统属性，用来指定UTF-8编码 -->
+                        <systemPropertyVariables>
+                            <file.encoding>UTF-8</file.encoding>
+                        </systemPropertyVariables>
                     </configuration>
                 </plugin>
                 <plugin>
                     <artifactId>maven-resources-plugin</artifactId>
                     <version>3.0.2</version>
+                    <configuration>
+                        <encoding>UTF-8</encoding>
+                    </configuration>
                 </plugin>
                 <plugin>
                     <artifactId>maven-compiler-plugin</artifactId>
@@ -64,6 +71,10 @@
                 <plugin>
                     <artifactId>maven-surefire-plugin</artifactId>
                     <version>2.22.1</version>
+                    <configuration>
+                        <!-- 让测试启动的JVM使用UTF-8编码 -->
+                        <argLine>-Dfile.encoding=UTF-8</argLine>
+                    </configuration>
                 </plugin>
                 <plugin>
                     <artifactId>maven-jar-plugin</artifactId>

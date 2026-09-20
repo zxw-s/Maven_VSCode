@@ -1,4 +1,7 @@
 {
     "maven.view": "flat",
-    "java.configuration.updateBuildConfiguration": "interactive"
+    "java.configuration.updateBuildConfiguration": "interactive",
+    "java.launcher.jvmArgs": [
+        "-Dfile.encoding=UTF-8"
+    ]
 }
