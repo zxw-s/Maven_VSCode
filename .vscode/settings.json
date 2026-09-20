@@ -1,5 +1,5 @@
 {
-    "maven.view": "flat",
+    "maven.view": "hierarchical",
     "java.configuration.updateBuildConfiguration": "interactive",
     "java.launcher.jvmArgs": [
         "-Dfile.encoding=UTF-8"
